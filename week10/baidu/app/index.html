@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/baidu.css -->
+    <link rel="stylesheet" type="text/css" href="styles/baidu.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="ul1">
+                <li id="weather_detail">
+                    <a href="" id="weather_local">北京:</a>
+                    <a href="" id="weather_ico"></a>
+                    <a href="" id="weather_tmp">12</a>
+                    <a href="" id="weather_level">良</a>
+                    <a href="" id="weather_level_number">56</a>
+                </li>
+                <span>|</span>
+                <li><a href="">宝箱</a></li>
+                <li id="changeColor"><a href="#">换肤</a></li>
+                <li><a href="">消息</a></li>
+            </ul>
+            <ul class="ul2">
+                <li><a href="" class="font_style01">糯米</a></li>
+                <li><a href="" class="font_style01">新闻</a></li>
+                <li><a href="" class="font_style01">hao123</a></li>
+                <li><a href="" class="font_style01">地图</a></li>
+                <li><a href="" class="font_style01">视频</a></li>
+                <li><a href="" class="font_style01">贴吧</a></li>
+                <li><a href="" id="acount">adminstrator</a></li>
+                <li><a href="" id="setting">设置</a></li>
+                <li><a href="" id="more">更多产品</a></li>
+            </ul>
+            <!-- 天气下拉菜单 -->
+            <div class="weather">
+               <p style="line-height: 30px;background-color: #f8f8f8"><span style="width: 30px;height: 30px;float: left;background-color: #0063dc"></span><a href="">北京市发布大风蓝色预警</a></p>
+               <p><span>05月05日</span><span>农历 三月廿九(立夏)</span><a href="">未来七天天气</a></p>
+               <div class="weather_pic">
+                   <a href=""><p>周四</p><img src="images/晴.jpg"><p>22</p><p>晴</p><p>北风4-5级</p></a>
+                   <a href=""><p>周五</p><img src="images/晴.jpg"><p>22</p><p>晴</p><p>北风4-5级</p></a>
+                   <a href=""><p>周六</p><img src="images/晴.jpg"><p>22</p><p>晴</p><p>北风4-5级</p></a>
+                   <a href=""><p>周日</p><img src="images/晴.jpg"><p>22</p><p>晴</p><p>北风4-5级</p></a>
+                   <a href=""><p>周一</p><img src="images/晴.jpg"><p>22</p><p>晴</p><p>北风4-5级</p></a>
+               </div>
+            </div>
+            <!-- 天气下拉菜单 -->
+            <div class="color_change">
+                <p>请选择皮肤</p>
+                <img src="images/background_img1.jpg" alt="" width="150px" height="75px" id="img1">
+                <img src="images/background2.jpg" alt="" width="150px" height="75px" id="img2">
+                <img src="images/background3.jpg" alt="" width="150px" height="75px" id="img3">
+            </div>
+            <!-- 更多产品下拉菜单 -->
+            <div class="" id="more_item_panel">
+                <li>
+                    <span class="ico_music"></span>
+                    <span class="text">音乐</span>
+                </li>
+                <li>
+                    <span class="ico_picture"></span>
+                    <span class="text">图片</span>
+                </li>
+                <li>
+                    <span class="ico_answer"></span>
+                    <span class="text">知道</span>
+                </li>
+                <li>
+                    <span class="ico_doc"></span>
+                    <span class="text">文库</span>
+                </li>
+                <li>
+                    <span class="ico_fengyunbang"></span>
+                    <span class="text">风云榜</span>
+                </li>
+                <li>
+                    <span class="ico_baidu"></span>
+                    <span class="text">百度推广</span>
+                </li>
+                <li>
+                    <span class="text more_product">全部产品>></span>
+                </li>
+            </div>
+            <!-- 账号下拉菜单 -->
+            <div id="acount_item">
+                <li>我的vip</li>
+                <li>个人中心</li>
+                <li>账号设置</li>
+                <li>意见反馈</li>
+                <li>退出</li>
+            </div>
+            <!-- 设置下拉菜单 -->
+            <div id="setting_item">
+                <li>搜索设置</li>
+                <li>高级设置</li>
+                <li>关闭预测</li>
+                <li>搜索历史</li>
+            </div>
+        </div>
+        <div class="content">
+            <!-- 中间logo -->
+            <div class="logo">
+                <img src="images/baidu.png" width="270px" height="129px">
+            </div>
+            <!-- 中间搜索框 -->
+            <form>
+                <input type="text" id="input"></input>
+                <input type="button" value="百度一下" id="btn"></input>
+            </form>
+            <!-- 中间内容显示区表格 -->
+            <div class="table">
+                <nav>
+                    <li class="selected" id="myAttention"><span></span>我的关注</li>
+                    <li class="" id="recommendation">推荐</li>
+                    <li class="" id="Navigation">导航</li>
+                    <li class="" id="Movies">视频</li>
+                    <li class="" id="buy">购物</li>
+                    <span></span>
+                </nav>
+                <!-- 我的关注 -->
+                <div class="my_at" id="toggle">
+                    <p><span id="nav_threeT"></span><b>我的导航</b><span id="">(0)</span></p>
+                    <span></span>
+                    <p><span id="cross"></span>自定义</p>
+                </div>
+                <!-- 推荐选项内容 -->
+                <div class="recommend">
+                    <div class="left_content">
+                        <div class="news_top_notice">
+                            <span class="news_top_notice_line"></span>
+                            <span id="news_top_notice_logo"></span>
+                            <span id="news_top_notice_text">以下信息根据您的兴趣推荐</span>
+                            <span class="news_top_notice_line"></span>
+                        </div>
+                        <div class="new_item">
+                            <h2>好奇号拍摄火星全景图：登上目前最高点</h2>
+                            <img src="images/news_item1.jpg">
+                            <div><a href="">腾讯网</a><span>2016-05-04</span></div>
+                        </div>
+                        <div class="new_item">
+                            <h2> 好奇号拍摄火星全景图：登上目前最高点</h2>
+                            <div><a href="">腾讯网</a><span>2016-05-04</span></div>
+                        </div>
+                        <div class="new_item">
+                            <h2> 好奇号拍摄火星全景图：登上目前最高点</h2>
+                            <div><a href="">腾讯网</a><span>2016-05-04</span></div>
+                        </div>
+                        <div class="new_item">
+                            <h2> 好奇号拍摄火星全景图：登上目前最高点</h2>
+                            <div><a href="">腾讯网</a><span>2016-05-04</span></div>
+                        </div>
+                        <div class="new_item">
+                            <h2> 好奇号拍摄火星全景图：登上目前最高点</h2>
+                            <div><a href="">腾讯网</a><span>2016-05-04</span></div>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <p>实时热点 <span style="float: right;">换一换</span></p>
+                        <ul>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                            <li><span></span><a href="">王琳首度谈离婚</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 导航选项内容 -->
+                <div class="nav_content">
+                    <p><b>猜你喜欢</b></p>
+                    <ul id="like">
+                        <li><img src="images/nuomi_ico.png">百度糯米</li>
+                        <li><img src="images/jd.png">京东商城</li>
+                        <li><img src="images/一号店.png">一号店</li>
+                        <li><img src="images/苏宁.png">苏宁易购</li>
+                        <li><img src="images/唯平会.png">唯品会</li>
+                        <li><img src="images/当当网.png">当当网</li>
+                        <li><img src="images/淘宝.png">淘宝网</li>
+                        <li><img src="images/微信.png">微信</li>
+                        <li><img src="images/斗鱼.png">斗鱼</li>
+                        <li><img src="images/腾讯.png">腾讯</li>
+                        <li><img src="images/爱奇艺.png">爱奇艺</li>
+                        <li><img src="images/12306.png">铁路客户</li>
+                    </ul>
+                    <p><b>资讯信息</b></p>
+                    <ul id="info">
+                        <li><img src="images/Tencent.jpg"></li>
+                        <li><img src="images/sina.jpg"></li>
+                        <li><img src="images/微博.jpg"></li>
+                        <li><img src="images/sohu.jpg"></li>
+                        <li><img src="images/网易.jpg"></li>
+                        <li><img src="images/光明网.jpg"></li>
+                        <li><img src="images/cctv.jpg"></li>
+                        <li><img src="images/人民网.jpg"></li>
+                        <li><img src="images/中国日报.jpg"></li>
+                        <li><img src="images/牛图网.jpg"></li>
+                        <li><img src="images/凤凰网.jpg"></li>
+                        <li><img src="images/新华网.jpg"></li>
+                    </ul>
+                    <p><b>娱乐休闲</b></p>
+                    <ul id="game">
+                        <li><img src="images/爱奇艺.jpg"></li>
+                        <li><img src="images/优酷.jpg"></li>
+                        <li><img src="images/土豆.jpg"></li>
+                        <li><img src="images/4399.jpg"></li>
+                        <li><img src="images/letv.jpg"></li>
+                        <li><img src="images/3dmzgame.jpg"></li>
+                        <li><img src="images/哔哩哔哩.jpg"></li>
+                        <li><img src="images/起点.jpg"></li>
+                        <li><img src="images/17173.jpg"></li>
+                        <li><img src="images/音悦.jpg"></li>
+                        <li><img src="images/多玩游戏.jpg"></li>
+                    </ul>
+                    <p><b>购物海淘</b></p>
+                    <ul id="shop">
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                        <li><img src="images/一号店.jpg"></li>
+                    </ul>
+                    <p><b>生活周边</b></p>
+                    <ul id="near">
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                        <li><img src="images/京东.jpg"></li>
+                    </ul>
+                </div>
+                <!-- 视频选项内容 -->
+                <div class="vedio">
+                    <div class="vedio_item">
+                        <div class="img_content">
+                            <img src="images/vedio1.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido2.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                    </div>
+                    <div class="vedio_item">
+                        <div class="img_content">
+                            <img src="images/vedio1.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido2.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                    </div>
+                    <div class="vedio_item">
+                        <div class="img_content">
+                            <img src="images/vedio1.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido2.jpg" width="156px" height="216px">
+                            <span>良家妇女</span>
+                            <div><span class="active_score"></span><span class="score"></span>8.0</div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido3.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/veido4.jpg" width="156px" height="80px">
+                            <span>拍游客挤爆西湖音乐喷泉现场 万人齐举手机</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物选项内容 -->
+                <div class="shopping">
+                    <div class="shop_item">
+                        <div class="good">
+                            <img src="images/购物1.jpg" width="156px" height="212px">
+                            <div id="good_info1">
+                                <p>伊丽莎白·雅顿 经典润唇膏</p>
+                                <p>仅售56元<span class="red_font_color">直降50%</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物1.jpg" width="156px" height="212px">
+                            <div id="good_info2">
+                                <p>伊丽莎白·雅顿 经典润唇膏</p>
+                                <p>仅售56元<span class="red_font_color">直降50%</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物1.jpg" width="156px" height="212px">
+                            <div id="good_info3">
+                                <p>伊丽莎白·雅顿 经典润唇膏</p>
+                                <p>仅售56元<span class="red_font_color">直降50%</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <p><b>1元得iPhone SE</b></p>
+                            <span>其他超值商品 1元可得</span>
+                            <a href="" class="small_blue_font">去看看</a>
+                            <span class="line"></span>
+                            <p><b>返利商场</b></p>
+                            <ul>
+                                <li><a href="">京东商城</a></li>
+                                <li><a href="">百度糯米</a></li>
+                                <li><a href="">1号店</a></li>
+                                <li><a href="">唯品会</a></li>
+                                <li><a href="">当当网</a></li>
+                                <li><a href="">蘑菇街</a></li>
+                                <li><a href="">聚美优品</a></li>
+                                <li><a href="">聚划算</a></li>
+                                <li><a href="">天猫超市</a></li>
+                                <li><a href="" class="small_blue_font">更多</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <p><a href=""><b class="red_font_color">超级反</b></a><span class="arrow"></span><a href="">9块9</a></p>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info5">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info6">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info7">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info8">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info9">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info10">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info11">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                        <div class="good">
+                            <img src="images/购物4.jpg" width="156px">
+                            <div id="good_info12">
+                            <p>来伊份夏威夷果192g*2 坚果炒货零食特产干果奶油</p>
+                            <p>¥39.9 <small><del>45</del></small></p>
+                            <p><span class="red_font_color">-28.32</span><span class="red_font_color red_border">返现71%</span><span class="gray_border">京东</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="permission">
+                <p><a href="">设为首页</a>&nbsp@2016 baidu<a href="">使用百度必读</a><a href="">意见建议</a> 京ICP证030173号</p>
+                <p>京公网安备11000002000001号</p>
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/jquery.min.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/baidu.js -->
+    <script src="scripts/baidu.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

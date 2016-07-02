@@ -1,0 +1,50 @@
+body{
+    display:-webkit-box; 
+   -webkit-box-align:center; 
+   -webkit-box-pack:center;/*使body中的元素水平居中*/
+   background-color: rgba(0, 187, 255, 0.99);
+}
+.red_font{
+    color: red;
+}
+.blue_font{
+    color: blue;
+}
+.gray_bg{
+    background-color:rgb(238, 238, 238);
+}
+.container{
+font-size: 12px;
+background-color: #fff;
+border-radius: 15px;
+border-style:1px solid;
+padding-left: 30px;
+padding-right: 30px;
+}
+.img{
+    float: left;
+}
+li{
+    float: right;
+    margin: 5px;
+    list-style-type: none;
+    margin-top: 60px;
+}
+.nav{
+    color: red;
+    text-decoration:none;
+}
+.title{
+    margin-top: 20px;
+    display:-webkit-box; 
+    -webkit-box-align:center; 
+    -webkit-box-pack:center;
+}
+
+
+.footer{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+

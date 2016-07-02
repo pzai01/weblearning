@@ -1,0 +1,13 @@
+h1,h2,p{   /*使标题和副标题居中*/
+    text-align: center;
+}
+a:hover{   /*当鼠标经过时候变为红色*/
+    text-decoration: none;
+    color: red;
+}
+.in>.panel-body{  /*当折叠打开的时候将字体颜色变为绿色*/
+    color: green;
+}
+.panel-body p{
+	text-align: left;
+}

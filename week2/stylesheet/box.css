@@ -1,0 +1,94 @@
+/*标准盒子模型*/
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+.contaniar1{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: green;
+    border: 5px solid blue;
+    display: inline-block;
+}
+/*怪异盒子模型*/
+.quirks{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.contaniar2{
+    -webkit-box-sizing:border-box;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: green;
+    border: 5px solid blue;
+    display: inline-block;
+}
+
+/*使用旧版弹性盒子实现水平分栏*/
+.layout_x{
+   width: 200px;
+   height: 200px;
+   background: gray;
+   display:-webkit-box;
+   -webkit-box-orient:horizontal；
+}
+/*使用旧版弹性盒子实现垂直分栏*/
+.layout_y{
+   width: 200px;
+   height: 200px;
+   background: orange;
+   display:-webkit-box;
+   -webkit-box-orient:vertical;
+   margin-top: 10px;
+}
+/*使用flex弹性盒子实现排序*/
+.order{
+   width: 200px;
+   height: 200px;
+   background: aquamarine;
+   display:-webkit-flex; 
+   margin-top: 10px;
+}
+/*设置分栏和排序的div的背景色，共用了class*/
+.first{
+    background-color: green;
+}
+.second{
+    background-color: red;
+}
+.third{
+    background-color: blue;
+}
+/*单独使用id选择，来设置排序的div的背景色*/
+#first{
+    order: 2;
+}
+#second{
+    order: 3;
+}
+#third{
+    order:1;
+}
+/*设置分栏的宽度和分的列数*/
+.col{
+   -webkit-columns:200px 5;
+}
+/*旧版弹性盒子实现居中效果*/
+.layout_center{
+    width: 400px;
+    height: 400px;
+    display:-webkit-box; 
+    -webkit-box-align:center; 
+    -webkit-box-pack:center;
+    background-color: green;
+}
+.img{
+    -webkit-box-align:center; 
+    width: 200px;
+    height: 200px;
+}

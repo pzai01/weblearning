@@ -1,0 +1,1 @@
+function test(){console.log("this is a test function")}function index(){console.log("this is index function"),console.log("this is add text"),console.log("hiaaa"),console.log("hiaaafgsfdsdf")}
