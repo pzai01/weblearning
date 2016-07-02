@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-this is a test1
-
-=======
-this is a test1
-
->>>>>>> 85ff264384c4f2304758fc88f855e36a07fae591

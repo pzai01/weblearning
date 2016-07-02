@@ -1,0 +1,3 @@
+执行npm install，bower install 安装依赖 ，执行gulp生成dist
+
+包含一个使用less进行css优化的极客学院的首页，使用sass预处理器编写css的公交站牌的demo

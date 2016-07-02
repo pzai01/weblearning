@@ -1,1 +1,0 @@
-执行npm install，bower install 安装依赖 ，执行gulp生成dist
