@@ -1,5 +1,0 @@
-本次直接使用express的静态页面，没有使用模板进行渲染
-后台管理页面的：http://127.0.0.1:3001/views/index.html
-新闻页面：http://127.0.0.1:3001/views/news.html
-nodejs的入口文件：testnode.js
-nodejs的mysql配置文件dbconf.js

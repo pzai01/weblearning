@@ -1,3 +1,0 @@
-文件夹内的node_modules文件夹都已经删除，使用的时候先npm install或者cnpm install安装依赖，包含有bower.js的文件先使用bower install安装依赖
-
-包含一个通过yeoman构建的百度页面，实现了js，html,css的压缩处理和优化
