@@ -1,0 +1,47 @@
+div.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dropdown-menu li{
+    text-align: center;
+}
+.dropdown-menu li a{
+    padding: 3px 10px;
+}
+.dropdown-menu{
+    min-width: 100px;
+}
+.content{
+    margin-top: 60px;
+}
+.panel-body{
+    padding: 0px;
+}
+.panel-body .list-group{
+    margin-bottom: 0px;
+}
+body .content .pannel_show{
+    display: block;
+}
+.news_update_list{
+    display: none;
+}
+.news_count{
+    display: none;
+}
+.news_add{
+    display: none;
+}
+.news_scan{
+    display: none;
+}
+.newsadding,.newsaddsuccess,.newsadderror{
+    position: absolute;
+    left: 345px;
+    top:35px;
+    display: none;
+}
+.input-warning{
+    color: red;
+    margin-left: 20px;
+}

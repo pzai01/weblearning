@@ -1,0 +1,70 @@
+.container{
+    display: -webkit-box;
+    /*-webkit-box-align:center;*/ 
+    -webkit-box-pack:center;
+    margin-top: 200px;
+}
+.content{
+
+}
+.man{
+   position: absolute;
+   left:200px;
+   transform: rotateZ(0deg);
+   animation:myanimationss 2s linear;
+   -webkit-animation:myanimationss 2s linear;
+   animation-delay:2s;
+   -webkit-animation-delay:2s;
+}
+.car{
+   position: absolute;
+   right: 200px;
+   animation:myanimationsf 2s linear;
+   -webkit-animation:myanimationsf 2s linear;
+}
+.gs{
+    position: absolute;
+    right: 200px;
+}
+.img1{
+    width: 100px;
+    height: 100px;
+}
+.img2{
+    width: 100px;
+    height: 100px;
+}
+.img3{
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    animation:myanimationst 2s linear;
+    -webkit-animation:myanimationst 2s linear;
+    animation-delay:4s;
+    -webkit-animation-delay:4s;
+}
+
+@keyframes myanimationsf{
+    0%{right:200px;}
+    50%{right:400px;}
+    70%{right:650px;}
+    100%{right:900px;}
+}
+@-webkit-keyframes myanimationsf{
+    0%{right:200px;}
+    50%{right:400px;}
+    70%{right:650px;}
+    100%{right:900px;}
+}
+@keyframes myanimationss{
+    0%{left:200px; top: 200px;transform: rotateZ(0deg);}
+    50%{left:150px;top: 100px;transform: rotateZ(-30deg);}
+    70%{left:50px;top: 50px;transform: rotateZ(-60deg);}
+    100%{left:0px;top:0px;transform: rotateZ(-90deg);}
+}
+@-webkit-keyframes myanimationss{
+    0%{left:200px;top: 200px;transform: rotateZ(0deg);}
+    50%{left:150px;top: 100px;transform: rotateZ(-30deg);}
+    70%{left:50px;top: 50px;transform: rotateZ(-60deg);}
+    100%{left:0px;top: 0px;transform: rotateZ(-90deg);}
+}

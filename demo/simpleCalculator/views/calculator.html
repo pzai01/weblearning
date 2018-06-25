@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/calculator.css">
+</head>
+<body>
+<div class="pannel">
+    <!-- 计算器的显示部分 -->
+    <span id="span1"></span>
+    <hr>
+    <!-- 计算器数字按钮区 -->
+    <div class="btn" id="btn">
+        <input type="button" value="1" id="btn_1" class="btn_number">
+        <input type="button" value="2" id="btn_2" class="btn_number">
+        <input type="button" value="3" id="btn_3" class="btn_number">
+        <input type="button" value="4" id="btn_4" class="btn_number">
+        <input type="button" value="5" id="btn_5" class="btn_number">
+        <input type="button" value="6" id="btn_6" class="btn_number">
+        <input type="button" value="7" id="btn_7" class="btn_number">
+        <input type="button" value="8" id="btn_8" class="btn_number">
+        <input type="button" value="9" id="btn_9" class="btn_number">
+        <input type="button" value="0" id="btn_0" class="btn_number">
+        <input type="button" value="." id="btn_point" class="btn_number">
+        <hr>
+        <!-- 计算器三角函数按钮区 -->
+        <input type="button" value="sin" id="btn_sin" class="btn_number">
+        <input type="button" value="cos" id="btn_cos" class="btn_number">
+        <input type="button" value="tan" id="btn_tan" class="btn_number">
+        <input type="button" value="cot" id="btn_cot" class="btn_number">
+        <hr>
+        <!-- 计算器幂、开方、对数按钮区 -->
+        <input type="button" value="xΛy" id="btn_mi" class="btn_number">
+        <input type="button" value="√" id="btn_kaifang" class="btn_number">
+        <input type="button" value="log(n)" id="btn_log" class="btn_number">
+        <input type="button" value="exp(n)" id="btn_exp" class="btn_number">
+        <hr>
+        <!-- 计算器操作按钮区 -->
+        <input type="button" value="+" id="btn_add" class="btn_comp">
+        <input type="button" value="-" id="btn_sub" class="btn_comp">
+        <input type="button" value="*" id="btn_mul" class="btn_comp">
+        <input type="button" value="/" id="btn_div" class="btn_comp">
+        <input type="button" value="clear" id="btn_clear" class="btn_comp">
+        <input type="button" value="result" id="btn_result" class="btn_comp">
+    </div>
+</div>
+<div class="info">
+    <p><b>普通的加减乘除运算：</b>请依次输入第一个数、运算符、第二个数，然后按result按钮获取结果</p>
+    <p><b>三角函数运算：</b>输入的顺序是先按三角函数的参数，再按三角函数的按钮，例如sin(60),先按60再按sin 然后按result按钮获取结果</p>
+    <p><b>幂运算：</b>例如x的y次方 ，先输入x，软后按xΛy按钮，再按键输入y,然后按result按钮获取结果</p>
+    <p><b>开方运算：</b>先输入被开方的数，然后按开方按钮,然后按result按钮获取结果</p>
+    <p><b>底数运算：</b>先输入需要求底数的数，然后按log或者exp按钮,然后按result按钮获取结果</p>
+</div>
+<script type="text/javascript" src="../js/Calculator.js"></script>
+</body>
+</html>

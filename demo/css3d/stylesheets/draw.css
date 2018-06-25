@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+.paodan{       /*炮弹动画*/
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 210px;
+    left: 280px;
+    animation:myanimationsfour 1s linear;
+    animation-iteration-count:10;
+}
+.yuan1{       /*底部轮子前后的圆弧*/
+    width: 115px;
+    height: 115px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 518px;
+    left: 350px;
+}
+.yuan2{      /*底部轮子前后的圆弧*/
+    width: 115px;
+    height: 115px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 518px;
+    left: 900px;
+}
+.paogan{     /*炮杆*/
+    width: 350px;
+    height: 20px;
+    background-color: gray;
+    position: absolute;
+    top: 210px;
+    left: 280px;
+}
+.zhengfangxing{     /*最上边的方形*/
+    width: 120px;
+    height: 80px;
+    background-color: rgba(29, 28, 27, 0.79);
+    position: absolute;
+    left: 630px;
+    top: 200px;
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.tixing{         /*第二层的体形*/
+    width: 200px;
+    height: 0px;
+    border: 150px solid;
+    border-color: #FFD800;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    left: 450px;
+    top: 120px;
+}
+.changfangxing{   /*轮子上面的长方形*/
+    width: 600px;
+    height: 150px;
+    background-color: darkkhaki;
+    position: absolute;
+    top: 420px;
+    left: 390px;
+    border-radius: 20px;
+}
+.lunzi{          /*底部的轮子的履带容器*/
+    width: 550px;
+    height: 115px;
+    background-color: gray;
+    /*border-radius: 50%;*/
+    position: relative;
+    top: 500px;
+}
+.lunzi1{        /*履带里的轮子*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* position: relative; */
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align:center;*/
+}
+.lunzi2{          /*履带里的轮子*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* position: relative; */
+    position: absolute;
+    left: 110px;
+    top: 10px;
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align:center;*/
+}
+.lunzi3{         /*履带里的轮子*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* position: relative; */
+    position: absolute;
+    left: 221px;
+    top: 10px;
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align:center;*/
+}
+.lunzi4{       /*履带里的轮子*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* position: relative; */
+    position: absolute;
+    left: 334px;
+    top: 10px;
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align:center;*/
+}
+.lunzi5{     /*履带里的轮子*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* position: relative; */
+    position: absolute;
+    left: 439px;
+    top: 10px;
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align:center;*/
+}
+.z1{       /*轮子的叶子*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -46px;
+    margin-top:-46px;
+    width: 0px;
+    height: 0px;
+    border: 23px solid;
+    /*border-bottom-width: 50px;*/
+    border-right-color: red;
+    border-left-color: green;
+    border-top-color: orange;
+    border-bottom-color: yellow;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    transform-origin: 46px 46px;
+    transform: rotateZ(0deg);
+    animation: myanimationsf 2s linear;
+    animation-iteration-count:10;
+    -webkit-animation-iteration-count:10;
+}
+.z2{            /*轮子的叶子*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -46px;
+    margin-top: -46px;
+    width: 0px;
+    height: 0px;
+    border: 23px solid;
+    /*border-bottom-width: 50px;*/
+    border-right-color: red;
+    border-left-color: green;
+    border-top-color: orange;
+    border-bottom-color: black;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    transform-origin: 46px 46px;
+    transform: rotateZ(120deg);
+    animation: myanimationss 2s linear;
+    animation-iteration-count:10;
+    -webkit-animation-iteration-count:10;
+}
+.z3{         /*轮子的叶子*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -46px;
+    margin-top: -46px;
+    width: 0px;
+    height: 0px;
+    border: 23px solid;
+    /*border-bottom-width: 50px;*/
+    border-right-color: red;
+    border-left-color: green;
+    border-top-color: orange;
+    border-bottom-color: blue;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    transform-origin: 46px 46px;
+    transform: rotateZ(240deg);
+    animation: myanimationst 2s linear;
+    animation-iteration-count:10;
+    -webkit-animation-iteration-count:10;
+}
+@keyframes myanimationsf{     /*轮子转动动画*/
+    0%{transform: rotateZ(0deg);border-bottom-color:green;}
+    50%{transform: rotateZ(120deg);border-bottom-color:red;}
+    70%{transform: rotateZ(240deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(360deg);border-bottom-color:yellow;}
+}
+@-webkit-keyframes myanimationsf{     /*轮子转动动画*/
+    0%{transform: rotateZ(0deg);border-bottom-color:green;}
+    50%{transform: rotateZ(120deg);border-bottom-color:red;}
+    70%{transform: rotateZ(240deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(360deg);border-bottom-color:yellow;}
+}
+@keyframes myanimationss{          /*轮子转动动画*/
+    0%{transform: rotateZ(120deg);border-bottom-color:green;}
+    50%{transform: rotateZ(240deg);border-bottom-color:red;}
+    70%{transform: rotateZ(360deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(480deg);border-bottom-color:yellow;}
+}
+@-webkit-keyframes myanimationss{    /*轮子转动动画*/
+    0%{transform: rotateZ(120deg);border-bottom-color:green;}
+    50%{transform: rotateZ(240deg);border-bottom-color:red;}
+    70%{transform: rotateZ(360deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(480deg);border-bottom-color:yellow;}
+}
+@keyframes myanimationst{           /*轮子转动动画*/
+    0%{transform: rotateZ(240deg);border-bottom-color:green;}
+    50%{transform: rotateZ(360deg);border-bottom-color:red;}
+    70%{transform: rotateZ(480deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(600deg);border-bottom-color:yellow;}
+}
+@-webkit-keyframes myanimationst{    /*轮子转动动画*/
+    0%{transform: rotateZ(240deg);border-bottom-color:green;}
+    50%{transform: rotateZ(360deg);border-bottom-color:red;}
+    70%{transform: rotateZ(480deg);border-bottom-color:orange;}
+    100%{transform: rotateZ(600deg);border-bottom-color:yellow;}
+}
+@keyframes myanimationsfour{      /*子弹飞出动画*/
+    0%{left: 280px;}
+    50%{left: 210px;}
+    70%{left: 140px;}
+    100%{left: 70px;}
+}
+@-webkit-keyframes myanimationstfour{
+    0%{left: 280px;}
+    50%{left: 210px;}
+    70%{left: 140px;}
+    100%{left: 70px;}
+}
